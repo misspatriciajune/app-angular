@@ -1,0 +1,12 @@
+<div class="menu" fxLayout="column">
+    <mat-nav-list>
+        <mat-list-item *ngFor="let link of links" (click)="setRoute(link.route, link.param)">
+            <p matLine>{{ link.page }}</p>
+            <mat-icon>{{link.icon}}</mat-icon>
+        </mat-list-item>
+        <mat-list-item (click)="handleLogout()" fxShow fxHide.gt-sm>
+            <p matLine>Logout</p>
+            <mat-icon>exit_to_app</mat-icon>
+        </mat-list-item>
+    </mat-nav-list>
+</div>

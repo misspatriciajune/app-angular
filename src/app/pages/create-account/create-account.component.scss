@@ -1,0 +1,20 @@
+
+.content {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+
+    mat-card {
+        height: 80%;
+
+        form {
+            width: 80%;
+        }
+
+        p {
+            a{
+                text-decoration: none;
+            }
+        }
+    }
+}
